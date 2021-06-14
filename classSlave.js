@@ -49,9 +49,39 @@ var Slave = /** @class */ (function (_super) {
     Slave.prototype.setHealth = function (health) {
         this.health = health;
     };
+    Slave.prototype.getRandomInt = function (min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+    };
     Slave.prototype.hit = function (slave) {
-        slave.setHealth(slave.getHealth() - this.damage);
-        console.log(slave.getName() + " was kicked by " + this.name + ". His health now is: " + slave.getHealth());
+        var areaHit = this.getRandomInt(0, 5);
+        if (areaHit == 1) {
+            slave.setHealth((slave.getHealth() - this.damage * 0.5));
+            console.log(slave.getName() + " was kicked by " + this.name + " in hand. His health now is: " + slave.getHealth());
+            return;
+        }
+        else if (areaHit == 2) {
+            slave.setHealth(slave.getHealth() - this.damage);
+            console.log(slave.getName() + " was kicked by " + this.name + " in body. His health now is: " + slave.getHealth());
+            return;
+        }
+        else if (areaHit == 3) {
+            slave.setHealth((slave.getHealth() - this.damage * 0.5));
+            console.log(slave.getName() + " was kicked by " + this.name + " in leg. His health now is: " + slave.getHealth());
+            return;
+        }
+        else if (areaHit == 4) {
+            slave.setHealth((slave.getHealth() - this.damage * 2));
+            console.log(slave.getName() + " was kicked by " + this.name + " in head. His health now is: " + slave.getHealth());
+            return;
+        }
+        else
+            (areaHit == 5);
+        {
+            console.log(slave.getName() + " was kicked by " + this.name + " but missed. His health now is: " + slave.getHealth());
+            return;
+        }
     };
     Slave.prototype.getGreeting = function () {
         console.log("Successfully created Slave. His name is " + this.name + ", his points is - Armor: " + this.armor + ", Damage: " + this.damage + ", Health: " + this.health + ".");

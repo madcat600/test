@@ -8,11 +8,11 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 var armor1 = getRandomInt(0, 100);
-var damage1 = getRandomInt(0, 50);
+var damage1 = getRandomInt(0, 20);
 var health1 = 100;
 var name1 = "Jim";
 var armor2 = getRandomInt(0, 100);
-var damage2 = getRandomInt(0, 50);
+var damage2 = getRandomInt(0, 20);
 var health2 = 100;
 var name2 = "Stan";
 var slave1 = new classSlave_1.Slave(armor1, damage1, health1, name1);

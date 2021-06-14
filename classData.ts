@@ -8,12 +8,12 @@ function getRandomInt(min, max){
 }
 
 let armor1:number = getRandomInt(0, 100);
-let damage1:number = getRandomInt(0, 50);
+let damage1:number = getRandomInt(0, 20);
 let health1:number = 100;
 let name1:string = "Jim";
 
 let armor2:number = getRandomInt(0, 100);
-let damage2:number = getRandomInt(0, 50);
+let damage2:number = getRandomInt(0, 20);
 let health2:number = 100;
 let name2:string = "Stan";
 
