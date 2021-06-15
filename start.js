@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
-var classFight_1 = require("./classFight");
-var classSlave_1 = require("./classSlave");
+var classFight_1 = require("./fight");
+var classSlave_1 = require("./slave");
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);

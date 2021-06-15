@@ -1,5 +1,5 @@
-import {Fight} from "./classFight"
-import {Slave} from "./classSlave"
+import {Fight} from "./fight"
+import {Slave} from "./slave"
 
 function getRandomInt(min, max){
     min = Math.ceil(min);

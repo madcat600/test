@@ -1,4 +1,4 @@
-import {Slave} from "./classSlave"
+import {Slave} from "./slave"
 
 export class Fight{
 

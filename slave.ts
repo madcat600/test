@@ -1,4 +1,4 @@
-import {Human} from "./classHuman";
+import {Human} from "./human";
 
 export class Slave extends Human {
 
@@ -65,7 +65,7 @@ export class Slave extends Human {
             return;
         }
 
-        else (areaHit == 5) {
+        else {
             console.log(slave.getName() + " was kicked by " + this.name + " but missed. His health now is: " + slave.getHealth());
             return;
         }

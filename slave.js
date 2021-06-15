@@ -16,7 +16,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 exports.__esModule = true;
 exports.Slave = void 0;
-var classHuman_1 = require("./classHuman");
+var human_1 = require("./human");
 var Slave = /** @class */ (function (_super) {
     __extends(Slave, _super);
     function Slave(armor, damage, health, name) {
@@ -76,9 +76,7 @@ var Slave = /** @class */ (function (_super) {
             console.log(slave.getName() + " was kicked by " + this.name + " in head. His health now is: " + slave.getHealth());
             return;
         }
-        else
-            (areaHit == 5);
-        {
+        else {
             console.log(slave.getName() + " was kicked by " + this.name + " but missed. His health now is: " + slave.getHealth());
             return;
         }
@@ -87,5 +85,5 @@ var Slave = /** @class */ (function (_super) {
         console.log("Successfully created Slave. His name is " + this.name + ", his points is - Armor: " + this.armor + ", Damage: " + this.damage + ", Health: " + this.health + ".");
     };
     return Slave;
-}(classHuman_1.Human));
+}(human_1.Human));
 exports.Slave = Slave;
