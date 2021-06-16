@@ -8,6 +8,7 @@ export class Fight{
 
     start() {
         let round = 1;
+ //       setTimeout(this.start, 500);
 
         do {
             console.log(`round #${round}`);

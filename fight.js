@@ -8,6 +8,7 @@ var Fight = /** @class */ (function () {
     }
     Fight.prototype.start = function () {
         var round = 1;
+        //       setTimeout(this.start, 500);
         do {
             console.log("round #" + round);
             round++;
